@@ -58,7 +58,7 @@ public class RedissonConfigTest {
                 .setCodec(new JsonJacksonCodec())
                 .setCodecProvider(new DefaultCodecProvider())
                 .setThreads(11)
-                .setNettyThreads(10)
+                .setNettyThreads(10)1
                 .setUseLinuxNativeEpoll(true);
         Assert.assertEquals(config0.toJSON(), config1.toJSON());
     }
